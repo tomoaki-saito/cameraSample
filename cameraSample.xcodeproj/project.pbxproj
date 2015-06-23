@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		29A34B911B39763A00235350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34B901B39763A00235350 /* AppDelegate.swift */; };
-		29A34B931B39763A00235350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34B921B39763A00235350 /* ViewController.swift */; };
+		29A34B931B39763A00235350 /* CustomCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34B921B39763A00235350 /* CustomCameraViewController.swift */; };
 		29A34B961B39763A00235350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A34B941B39763A00235350 /* Main.storyboard */; };
 		29A34B981B39763A00235350 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A34B971B39763A00235350 /* Images.xcassets */; };
 		29A34B9B1B39763A00235350 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A34B991B39763A00235350 /* LaunchScreen.xib */; };
 		29A34BA71B39763A00235350 /* cameraSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BA61B39763A00235350 /* cameraSampleTests.swift */; };
+		29A34BB11B397CAC00235350 /* SimpleCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BB01B397CAC00235350 /* SimpleCameraViewController.swift */; };
+		29A34BB31B398A3500235350 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BB21B398A3500235350 /* OverlayView.swift */; };
+		29A34BB51B398A4900235350 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A34BB41B398A4900235350 /* OverlayView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		29A34B8B1B39763A00235350 /* cameraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A34B8F1B39763A00235350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A34B901B39763A00235350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29A34B921B39763A00235350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29A34B921B39763A00235350 /* CustomCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraViewController.swift; sourceTree = "<group>"; };
 		29A34B951B39763A00235350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29A34B971B39763A00235350 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29A34B9A1B39763A00235350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		29A34BA01B39763A00235350 /* cameraSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cameraSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A34BA51B39763A00235350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A34BA61B39763A00235350 /* cameraSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraSampleTests.swift; sourceTree = "<group>"; };
+		29A34BB01B397CAC00235350 /* SimpleCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraViewController.swift; sourceTree = "<group>"; };
+		29A34BB21B398A3500235350 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		29A34BB41B398A4900235350 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				29A34B901B39763A00235350 /* AppDelegate.swift */,
-				29A34B921B39763A00235350 /* ViewController.swift */,
 				29A34B941B39763A00235350 /* Main.storyboard */,
+				29A34B921B39763A00235350 /* CustomCameraViewController.swift */,
+				29A34BB01B397CAC00235350 /* SimpleCameraViewController.swift */,
+				29A34BB21B398A3500235350 /* OverlayView.swift */,
+				29A34BB41B398A4900235350 /* OverlayView.xib */,
 				29A34B971B39763A00235350 /* Images.xcassets */,
 				29A34B991B39763A00235350 /* LaunchScreen.xib */,
 				29A34B8E1B39763A00235350 /* Supporting Files */,
@@ -193,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A34B961B39763A00235350 /* Main.storyboard in Resources */,
+				29A34BB51B398A4900235350 /* OverlayView.xib in Resources */,
 				29A34B9B1B39763A00235350 /* LaunchScreen.xib in Resources */,
 				29A34B981B39763A00235350 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A34B931B39763A00235350 /* ViewController.swift in Sources */,
+				29A34BB11B397CAC00235350 /* SimpleCameraViewController.swift in Sources */,
+				29A34BB31B398A3500235350 /* OverlayView.swift in Sources */,
+				29A34B931B39763A00235350 /* CustomCameraViewController.swift in Sources */,
 				29A34B911B39763A00235350 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
