@@ -1,46 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverlayView" customModule="cameraSample" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OverlayView" customModule="cameraSample" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="そんなバカな！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-pC-Eli">
-                    <rect key="frame" x="41" y="89" width="119" height="21"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLW-rp-dcx">
+                    <rect key="frame" x="75" y="30" width="150" height="240"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="LLi-RN-IBW"/>
-                        <constraint firstAttribute="width" constant="119" id="VKg-yc-dzh"/>
+                        <constraint firstAttribute="width" secondItem="GLW-rp-dcx" secondAttribute="height" multiplier="5:8" id="KJN-V2-mBB"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.95686274510000002" green="0.1526900035" blue="0.33473723820000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Wa8-pC-Eli" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="89" id="ECa-oS-yCC"/>
-                <constraint firstAttribute="bottom" secondItem="Wa8-pC-Eli" secondAttribute="bottom" constant="90" id="JbI-xq-FV6"/>
-                <constraint firstItem="Wa8-pC-Eli" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="41" id="LLD-C5-lfY"/>
-                <constraint firstAttribute="trailing" secondItem="Wa8-pC-Eli" secondAttribute="trailing" constant="40" id="WWZ-ee-5px"/>
-                <constraint firstAttribute="centerY" secondItem="Wa8-pC-Eli" secondAttribute="centerY" id="XXH-Z7-76W"/>
-                <constraint firstAttribute="centerX" secondItem="Wa8-pC-Eli" secondAttribute="centerX" id="f87-MX-M5z"/>
+                <constraint firstAttribute="centerY" secondItem="GLW-rp-dcx" secondAttribute="centerY" id="FdQ-Kp-2Ow"/>
+                <constraint firstAttribute="bottom" secondItem="GLW-rp-dcx" secondAttribute="bottom" constant="30" id="MW4-sJ-Mjg"/>
+                <constraint firstAttribute="centerX" secondItem="GLW-rp-dcx" secondAttribute="centerX" id="whK-mG-nr7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="ECa-oS-yCC"/>
-                    <exclude reference="JbI-xq-FV6"/>
-                    <exclude reference="LLD-C5-lfY"/>
-                    <exclude reference="WWZ-ee-5px"/>
-                </mask>
-            </variation>
-            <point key="canvasLocation" x="-183" y="-254.5"/>
+            <connections>
+                <outlet property="borderView" destination="GLW-rp-dcx" id="frn-wh-Wha"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="-219"/>
         </view>
     </objects>
 </document>

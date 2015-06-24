@@ -16,6 +16,8 @@
 		29A34BB11B397CAC00235350 /* SimpleCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BB01B397CAC00235350 /* SimpleCameraViewController.swift */; };
 		29A34BB31B398A3500235350 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BB21B398A3500235350 /* OverlayView.swift */; };
 		29A34BB51B398A4900235350 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A34BB41B398A4900235350 /* OverlayView.xib */; };
+		29A34BB81B3A3FCB00235350 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BB61B3A3FCB00235350 /* ArrayExtension.swift */; };
+		29A34BB91B3A3FCB00235350 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A34BB71B3A3FCB00235350 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		29A34BB01B397CAC00235350 /* SimpleCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCameraViewController.swift; sourceTree = "<group>"; };
 		29A34BB21B398A3500235350 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		29A34BB41B398A4900235350 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		29A34BB61B3A3FCB00235350 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		29A34BB71B3A3FCB00235350 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				29A34BB41B398A4900235350 /* OverlayView.xib */,
 				29A34B971B39763A00235350 /* Images.xcassets */,
 				29A34B991B39763A00235350 /* LaunchScreen.xib */,
+				29A34BBA1B3A3FDF00235350 /* CustomClass */,
 				29A34B8E1B39763A00235350 /* Supporting Files */,
 			);
 			path = cameraSample;
@@ -119,6 +124,15 @@
 				29A34BA51B39763A00235350 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29A34BBA1B3A3FDF00235350 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				29A34BB61B3A3FCB00235350 /* ArrayExtension.swift */,
+				29A34BB71B3A3FCB00235350 /* UIViewExtension.swift */,
+			);
+			name = CustomClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A34BB91B3A3FCB00235350 /* UIViewExtension.swift in Sources */,
+				29A34BB81B3A3FCB00235350 /* ArrayExtension.swift in Sources */,
 				29A34BB11B397CAC00235350 /* SimpleCameraViewController.swift in Sources */,
 				29A34BB31B398A3500235350 /* OverlayView.swift in Sources */,
 				29A34B931B39763A00235350 /* CustomCameraViewController.swift in Sources */,

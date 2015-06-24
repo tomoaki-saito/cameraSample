@@ -12,6 +12,8 @@ class SimpleCameraViewController: UIViewController, UIImagePickerControllerDeleg
     
     var cameraPicker: UIImagePickerController? = nil
     var imagePicker: UIImagePickerController? = nil
+    let windowSize: CGSize = UIScreen.mainScreen().bounds.size
+    
     @IBOutlet var imageView: UIImageView!
 
     override func viewDidLoad() {
@@ -21,8 +23,15 @@ class SimpleCameraViewController: UIViewController, UIImagePickerControllerDeleg
             self.cameraPicker = UIImagePickerController()
             self.cameraPicker?.sourceType = .Camera
             self.cameraPicker?.delegate = self
+//            self.cameraPicker?.showsCameraControls = false
             let overlayView = OverlayView.instance()
-            overlayView.frame = CGRectMake(0, 0, 200, 200)
+            
+            println(self.cameraPicker?.view.frame)
+            println(cameraPicker?.preferredContentSize)
+            println(cameraPicker?.toolbar.frame)
+            println(cameraPicker?.cameraOverlayView?.frame)
+            
+            overlayView.frame = CGRectMake(0, cameraPicker!.toolbar.frame.size.height, cameraPicker!.toolbar.frame.size.width, self.cameraPicker!.preferredContentSize.height)
             self.cameraPicker?.cameraOverlayView = overlayView
         }
         
@@ -32,11 +41,13 @@ class SimpleCameraViewController: UIViewController, UIImagePickerControllerDeleg
             self.imagePicker?.delegate = self
             self.imagePicker?.allowsEditing = false
         }
-        
     }
 
     @IBAction func cameraButtonPushed(sender: AnyObject) {
         if cameraPicker != nil {
+            println(self.cameraPicker?.view.frame)
+            println(cameraPicker?.preferredContentSize)
+            println(cameraPicker?.toolbar.frame)
             self.presentViewController(self.cameraPicker!, animated:true, completion:nil)
         }
     }
